@@ -5,6 +5,8 @@ set -o pipefail
 
 # for setup, run the following in dom0 console
 # `qvm-usb attach --persistent sys-net $(qvm-usb|grep Realtek|awk '{print $1}')`
+# run the following in sys-net console
+# `sudo bash -c 'echo "/home/user/wifi_driver_setup/build_dkms.sh &" >> /rw/config/rc.local'`
 
 function usage ()
 {
