@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+notify-send "Attaching wifi antenna to sys-net"
+qvm-usb|grep Realtek|awk '{print $1}'|xargs -n1 qvm-device usb attach sys-net
+notify-send "USB funky stuff going on"

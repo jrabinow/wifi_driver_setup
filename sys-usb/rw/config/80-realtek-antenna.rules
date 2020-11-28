@@ -1,0 +1,1 @@
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idProduct}=="b812", ATTR{idVendor}=="0bda", RUN+="/usr/bin/qrexec-client-vm dom0 custom.attachWifiAntenna"
